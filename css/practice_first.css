@@ -1,0 +1,160 @@
+body {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.wrapper-display {
+  background-image: url(../img/top_image.png);
+  background-size: cover;
+}
+.word {
+  padding: 300px 250px;
+  display: inline-block;
+  font-size: 96px;
+  font-weight: bold;
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  height: 90px;
+}
+.header-logo {
+  padding: 15px 0px;
+  float: left;
+  height: 60px;
+  width: 250px;
+}
+.header-word {
+  display: inline-block;
+  float: right;
+  color: white;
+}
+.ask {
+  display: flex;
+  height: 60px;
+  padding: 15px 15px;
+}
+
+.main-contens {
+  color: black;
+  background-color: white;
+  opacity: 0.8;
+  padding-bottom: 30px;
+}
+
+.imgcontent {
+  width: 100%;
+}
+.content-txt {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.content {
+  position: relative;
+  margin: 0 30px 30px 30px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.detail-btn {
+  margin-top: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #627295;
+  border-radius: 3px; /*角の丸み*/
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+}
+.detail-btn:active {
+  box-shadow: none;
+  top: 10px;
+}
+.detail-btn:hover {
+  cursor: pointer;
+}
+
+.intro-teachers h2 {
+  font-size: 32px;
+}
+
+.intro-teachers {
+  padding-top: 30px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: black;
+  width: 80%;
+}
+.txt {
+  width: 600px;
+}
+
+.picture img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-right: 20px;
+}
+.fiest-intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer {
+  height: 90px;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  line-height: 90px;
+}
+.link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content:active {
+  box-shadow: none;
+  top: 10px;
+}
+
+/*レスポンシブ対応*/
+
+@media screen and (min-width: 500px) {
+  /*コース一覧*/
+  .content {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  /*コース一覧*/
+  .contents-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .content {
+    width: 40%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /*コース一覧*/
+  .contents-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .content {
+    width: 20%;
+    height: 50%;
+  }
+}
